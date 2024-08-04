@@ -37,6 +37,7 @@ jobs:
   integration-tests:
 
     runs-on: ubuntu-latest
+    needs: security-tests
 
     strategy:
       matrix:

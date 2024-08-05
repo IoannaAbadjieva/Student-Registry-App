@@ -65,6 +65,7 @@ jobs:
   deploy:
    
       runs-on: ubuntu-latest
+      if: github.ref == 'refs/head/main'
       needs: integration-tests
       
       steps:
